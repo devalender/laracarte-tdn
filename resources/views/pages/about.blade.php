@@ -1,5 +1,6 @@
-@extends('layouts/master')
+@extends('layouts/master',['title' => 'About'])
 @section('moncontenu')
+
 	<div class="container">
 		<h2>What is Laracarte?</h2>
 
@@ -10,7 +11,7 @@
 			</div>
 		</div>
 
-		<p>Feel free to help to improve the <a target="_blank" href="https://github.com/mercuryseries/laracarte">source code</a>.</p>
+		<p>Feel free to help to improve the <a target="_blank" href="https://github.com/devalender/laracarte-tdn">source code</a>.</p>
 
 		<hr>
 

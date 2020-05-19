@@ -15,18 +15,18 @@ use Illuminate\Support\Str;
 */
 
 
-Route::name('test2')->get('/monapli', 'MonaplisController@create');
+/*Route::name('test2')->get('/monapli', 'MonaplisController@create');
 Route::name('test3')->post('/monapli', 'MonaplisController@store');
 Route::name('test4')->get('/monapli/{racc}','MonaplisController@show');
 
-Route::name('test5')->get('/mesevenements', 'EvenementsController@show');
+Route::name('test5')->get('/mesevenements', 'EvenementsController@show');*/
 
 
 /*Route::get('/welcome', function () {
     return view('welcome');
 });*/
 
-Route::resource('magasins', 'MagasinsController');
+/*Route::resource('magasins', 'MagasinsController');*/
 
 /* route qui permet d'afficher la pge d'acceuil en utlisant la methode index*/
 /*Route::get('/', [

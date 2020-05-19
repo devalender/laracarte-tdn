@@ -9,6 +9,7 @@ if($event->isFree() ){
 	return $event->leprix . ' CFA';}
 }}
 
+
 if (! function_exists('flash')){
 
 	function flash ($message, $type='success'){
@@ -18,6 +19,26 @@ if (! function_exists('flash')){
 
 
 	}	
+}
+
+if (! function_exists('page_title')){
+
+	function page_title ($title){
+
+		$titrepage='Corwinci Application -Test';
+
+		if($title===''){
+
+			return $titrepage;
+
+		}else{
+
+		 return $title.' |'. $titrepage;
+
+		}
+
+	}	
+
 
 }
 
