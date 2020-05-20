@@ -48,6 +48,13 @@ Route::get('/about', [
 		'uses'=>'PagesController@about'/*action a utliser*/
 	]);
 
+Route::get('/contact', [
+
+		'as'=>'contact',/*nom de la route*/
+		'uses'=>'ContactController@create'/*action a utliser*/
+	]);
+
+
 /* ON PEUT RESTREINDRE LES ACTIONS*/
 /*Route::resource('magasins', 'MagasinsController', ['only' => [
 'index','show'
