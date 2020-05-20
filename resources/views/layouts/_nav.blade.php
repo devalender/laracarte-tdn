@@ -14,10 +14,10 @@
      <li class="nav-item">
         <a class="nav-link" href="#">Laracarte</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item {{ set_active_route('home') }}">
         <a class="nav-link" href="{{route('home') }}">home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item {{ set_active_route('about') }}">
         <a class="nav-link" href="{{route('about') }}">About</a>
       </li>
        <li class="nav-item">

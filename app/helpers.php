@@ -20,7 +20,7 @@ if (! function_exists('flash')){
 
 	}	
 }
-
+/*fonction qui met le titre de la page passer lors de lappel du layaout*/
 if (! function_exists('page_title')){
 
 	function page_title ($title){
@@ -36,6 +36,18 @@ if (! function_exists('page_title')){
 		 return $title.' |'. $titrepage;
 
 		}
+
+	}	
+
+
+}
+
+/*fonction qui met d'activer le menu en cours dans la navbar*/
+if (! function_exists('set_active_route')){
+
+	function set_active_route ($route){
+
+	return Route::is($route) ? 'active' : '';/*si c'est la route en question alors retourne active*/
 
 	}	
 
