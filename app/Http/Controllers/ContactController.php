@@ -39,7 +39,7 @@ class ContactController extends Controller
 
           $message = Mesmessages::create($request->only('name','email','messages'));
 
-          $mailable = new  MailMessage($message);
+          $mailable = new  MailMessage($message); /*Creation du mailable*/
 
  	/*$mailable = new  MailMessage(
       		$request -> name,
@@ -49,7 +49,7 @@ class ContactController extends Controller
     /*   Mail::to(config('devalender@gmail'))->send($mailable);*/
 
 
-       Mail::to(config('app.cheminmail'))->send($mailable);
+      Mail::to(config('app.cheminmail'))->send($mailable);
 
       Flashy()->success('Nous vous repondrons dans les plus brefs délais !');
 
