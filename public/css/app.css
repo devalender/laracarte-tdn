@@ -23,6 +23,19 @@ h1 {
  font-weight: normal;
  font-size:1.3em;
  }
+/*Replaced .has-error, .has-warning, and .has-success classes with HTML5 form validation via CSS’s 
+:invalid and :valid pseudo-classes.*/
+input:invalid {
+ border-color: #c00000;
+}
+
+ textarea:invalid {
+ border-color: #c00000;
+}
+/*form:invalid {
+  border: 5px solid #ffdddd; classe en remplacement de 
+}*/
+
 
 /* xx-small: minuscule ;
 

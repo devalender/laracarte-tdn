@@ -17,6 +17,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    |chemin_mail, c'est un clé personelle
+    |--------------------------------------------------------------------------
+    |
+    | Cette valeur permet de gerer les recuperer des données depuis un fichier.
+    |  
+    |
+    */
+
+    'cheminmail' => env('MAIL_FROM_ADDRESS','devalender@gmail.com'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
@@ -55,6 +67,7 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', null),
+
 
     /*
     |--------------------------------------------------------------------------

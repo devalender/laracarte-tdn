@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use App\mail\MailMessage;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,33 +49,28 @@ Route::get('/about', [
 		'uses'=>'PagesController@about'/*action a utliser*/
 	]);
 
+/*route pour l'appel du formulaire contact*/
 Route::get('/contact', [
 
 		'as'=>'contact',/*nom de la route*/
 		'uses'=>'ContactController@create'/*action a utliser*/
 	]);
 
+/*pour la validation zt l'envoi des données du formulaires*/
+Route::post('/contact', [
 
-/* ON PEUT RESTREINDRE LES ACTIONS*/
-/*Route::resource('magasins', 'MagasinsController', ['only' => [
-'index','show'
-]]);
+		'as'=>'contact',/*nom de la route*/
+		'uses'=>'ContactController@store'/*action a utliser*/
+	]);
 
-Route::resource('magasins', 'MagasinsController', ['except' => [
-'create','store','upadte','destroy'
-]]);*/
+/* route pour tester le retour du mail avec markdows*/
+Route::get('/monemail',function(){
 
-/* ON PEUT AUSSI NOMMES LES ACTIONS et LE NOM DES PARAMETRES*/
-/*Route::resource('magasins', 'MagasinsController', [
+	return new MailMessage(
+		'devalender',
+		'devalender@gmail.com',
+		'Soyez les Bienvenues'
+);
 
-'names' => [
-'index' => 'mesmagasin' ,
-'show' => 'unmagasin'
-],
-'parameters' => [
-'magasins' => 'mag'
 
-]
-
-]);*/
-
+});
