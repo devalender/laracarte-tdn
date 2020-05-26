@@ -8,8 +8,8 @@
 				<p><span class="text-muted">Si vous avez des probleme envoi un mail a cette adresse, svp ! <a href="mailto:{{ config('app.cheminmail') }}" data-helpful="laracarte" data-helpful-modal="on">Aide</a>.</span></p>
 
 				<form action="{{route('contact')}}" method="POST">
-
-		             {{csrf_field()}}<!--protection contre les failles-->
+					
+					{{csrf_field()}}
 
 		            <div class="form-group">
 		                <label for="name" class="control-label">Nom Complet</label>
@@ -17,7 +17,7 @@
 		               {!! $errors->first('name','<span class="help-block">:message</span>') !!}
 		            </div>
 
-		            <div class="form-group ">
+		            <div class="form-group">
 		                <label for="email" class="control-label">Adresse Mail</label>
 		                <input type="email" name="email" value="{{ old('email') }}" class="form-control" required="required">
 		                {!! $errors->first('email','<span class="help-block">:message</span>') !!}

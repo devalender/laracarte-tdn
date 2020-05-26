@@ -35,34 +35,51 @@ Route::name('test5')->get('/mesevenements', 'EvenementsController@show');*/
 		'as'=>'home',/*nom de la route*/
 	/*	'uses'=>'MagasinsController@index'/*action a utliser*/
 /*	]);*/
+/*****************************************************************************/
+/*Route::get('/', [
 
-Route::get('/', [
-
-		'as'=>'home',/*nom de la route*/
-		'uses'=>'PagesController@home'/*action a utliser*/
+		'as'=>'home', nom de la route
+		'uses'=>'PagesController@home'action a utliser
 	]);
+*/
 
+Route::view('/','pages.home')->name('home');
+/*on peux donc supprimer le controler pagecontroller
+/******************************************************************************/
 
-Route::get('/about', [
+/**********************************************************************/
+/*Route::get('/about', [
 
-		'as'=>'about',/*nom de la route*/
-		'uses'=>'PagesController@about'/*action a utliser*/
+		'as'=>'about',nom de la route
+		'uses'=>'PagesController@about'action a utliser
 	]);
+*/
+Route::view('/about','pages.about')->name('about');
+/*on peux donc supprimer le controler pagecontroller
 
+/***********************************************************************/
+
+/***********************************************************************/
 /*route pour l'appel du formulaire contact*/
-Route::get('/contact', [
+/*Route::get('/contact', [
 
-		'as'=>'contact',/*nom de la route*/
-		'uses'=>'ContactController@create'/*action a utliser*/
+		'as'=>'contact',
+		'uses'=>'ContactController@create'
 	]);
+*/
+Route::get('/contact','ContactController@create')->name('contact');
+/***********************************************************************/
 
+/**************************************************************************/
 /*pour la validation zt l'envoi des données du formulaires*/
-Route::post('/contact', [
+/*Route::post('/contact', [
 
-		'as'=>'contact',/*nom de la route*/
-		'uses'=>'ContactController@store'/*action a utliser*/
+		'as'=>'contact',
+		'uses'=>'ContactController@store'
 	]);
-
+*/
+Route::post('/contact','ContactController@store')->name('contact');
+/***************************************************************************/
 /* route pour tester le retour du mail avec markdows*/
 Route::get('/monemail',function(){
 

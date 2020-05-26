@@ -1,6 +1,6 @@
 <?php
 
-if (! function_exists('format_price')) {
+/*if (! function_exists('format_price')) {
 
 function format_price ($event){
 if($event->isFree() ){
@@ -14,12 +14,13 @@ if (! function_exists('flash')){
 
 	function flash ($message, $type='success'){
 
-		session()->flash('notification.message',$message);/*creation de message flash*/
+		session()->flash('notification.message',$message);creation de message flash
         session()->flash('notification.type',$type);
 
 
 	}	
 }
+*/
 /*fonction qui met le titre de la page passer lors de lappel du layaout*/
 if (! function_exists('page_title')){
 

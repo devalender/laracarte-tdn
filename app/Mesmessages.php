@@ -6,16 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mesmessages extends Model
 {
-/*	protected $casts = [
+	protected $casts = [
     'created_at' => 'datetime:Y-m-d',
     'updated_at' => 'datetime:Y-m-d'
-  ];*/
+  ];
 
-  public $timestamps = false;
+ /* public $timestamps = false;*/
     
  
  protected $fillable=[
-'nom',
+'name',
 'email',
 'messages'
 	];

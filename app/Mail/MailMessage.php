@@ -8,7 +8,8 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use App\Mesmessages;
 
-class MailMessage extends Mailable
+/* on ajoute le implement ShouldQueue pour pouvoir envoyer et mettre en meme temps dans la file d'attente*/
+class MailMessage extends Mailable /* implements ShouldQueue */
 {
     use Queueable, SerializesModels;
 
@@ -47,6 +48,7 @@ class MailMessage extends Mailable
      */
     public function build()
     {
-        return $this->markdown('pages.mailtemplate');
+        return $this->from ($this->msg->email, $this->msg->name)
+                    ->markdown('pages.mailtemplate');
     }
 }

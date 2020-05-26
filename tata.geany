@@ -27,7 +27,9 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=2
+current_page=4
 FILE_NAME_0=0;PHP;0;EUTF-8;1;1;0;C%3A%5Cwamp%5Cwww%5Cgeslocal%5Cbootstrap%5Capp.php;0;4
 FILE_NAME_1=1572;SQL;0;EUTF-8;1;1;0;C%3A%5CUsers%5CRUSTA%5CDesktop%5Ctest.sql;0;4
-FILE_NAME_2=8082;SQL;0;EUTF-8;1;1;0;C%3A%5CCOREWIN%5CDROITACCEES.sql;0;4
+FILE_NAME_2=0;SQL;0;EUTF-8;1;1;0;C%3A%5CCOREWIN%5CDROITACCEES.sql;0;4
+FILE_NAME_3=0;Conf;0;EUTF-8;1;1;0;c%3A%5Cwamp%5Cbin%5Capache%5Capache2.4.23%5Cconf%5Cextra%5Chttpd-vhosts.conf;0;4
+FILE_NAME_4=0;SQL;0;EUTF-8;1;1;0;C%3A%5CCOREWIN%5CTEMPO.sql;0;4

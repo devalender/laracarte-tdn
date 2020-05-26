@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light static-top">
 
-   <img src="/logocorwnci.png" width="90" height="40" alt="">
+<nav class="navbar navbar-expand-md navbar-light bg-light fixe-top">
+
+   <img src="/logocorwnci.png" width="90" height="20" alt="">
 
   <a class="navbar-brand" href="{{route('home') }}"><p><h3 class="text-primary">GESTION COLLECTIVITE</p></h3></a>
 

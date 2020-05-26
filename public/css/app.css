@@ -1,6 +1,6 @@
-/*body{
-padding-top: 100px;Mettre un espace entre le bar inferieur du menu et les autres elements
-}*/
+body{
+/*margin: 4em 0;/*Mettre un espace entre le bar inferieur du menu et les autres elements*/
+}
 
 .inline-block{ 
 display: inline-block; /* Mettre sur la meme ligne les boutons*/
@@ -9,7 +9,7 @@ display: inline-block; /* Mettre sur la meme ligne les boutons*/
 
 .help-block{
 /* la classe qui gère la couleur des messages*/
-color:blue;
+color:red;
 font-style:italic;
 font-weight: normal;
 }
