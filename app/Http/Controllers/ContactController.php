@@ -67,7 +67,7 @@ class ContactController extends Controller
 
       Flashy()->success('Nous vous repondrons dans les plus brefs délais !');
 
-      return redirect()->route('home');
+      return redirect()->route('acceuil');
 
 			}
 

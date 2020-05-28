@@ -3,7 +3,7 @@
 
    <img src="/logocorwnci.png" width="90" height="20" alt="">
 
-  <a class="navbar-brand" href="{{route('home') }}"><p><h3 class="text-primary">GESTION COLLECTIVITE</p></h3></a>
+  <a class="navbar-brand" href="{{route('acceuil') }}"><p><h3 class="text-primary">GESTION COLLECTIVITE</p></h3></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,8 +15,8 @@
      <li class="nav-item">
         <a class="nav-link" href="#">Laracarte</a>
       </li>
-      <li class="nav-item {{ set_active_route('home') }}">
-        <a class="nav-link" href="{{route('home') }}">home</a>
+      <li class="nav-item {{ set_active_route('acceuil') }}">
+        <a class="nav-link" href="{{route('acceuil') }}">home</a>
       </li>
       <li class="nav-item {{ set_active_route('about') }}">
         <a class="nav-link" href="{{route('about') }}">About</a>

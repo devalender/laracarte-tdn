@@ -43,7 +43,7 @@ Route::name('test5')->get('/mesevenements', 'EvenementsController@show');*/
 	]);
 */
 
-Route::view('/','pages.home')->name('home');
+Route::view('/acceuil','pages.acceuil')->name('acceuil');
 /*on peux donc supprimer le controler pagecontroller
 /******************************************************************************/
 
@@ -86,8 +86,11 @@ Route::get('/monemail',function(){
 	return new MailMessage(
 		'devalender',
 		'devalender@gmail.com',
-		'Soyez les Bienvenues'
-);
-
-
+		'Soyez les Bienvenues' );
 });
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

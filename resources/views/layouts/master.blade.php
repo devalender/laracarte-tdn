@@ -10,6 +10,14 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- Optional JavaScript -->
+   
+    <script 
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
     <!-- Bootstrap CSS -->
     <link 
     rel="stylesheet" 
@@ -17,25 +25,15 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
     crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <script 
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-
-    <script 
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
-    crossorigin="anonymous"></script>
-
-     <link 
+    <link 
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     rel="stylesheet" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
     crossorigin="anonymous">
 
    	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   	<link rel="stylesheet" type="text/css" href="/css/app.css">
+   	<link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}">
+
 
 </head>
 

@@ -31,7 +31,7 @@
 		            </div>
 
 		            <div class="form-group">
-		                  <button type="submit" class="btn btn-outline-primary" formnovalidate="">Soumettre le message &raquo;</button>
+		                  <button type="submit" class="btn btn-outline-primary">Soumettre le message &raquo;</button>
 		            </div>
 		        </form>
 			</div>
