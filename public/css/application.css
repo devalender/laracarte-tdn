@@ -1,0 +1,52 @@
+body{
+/*margin: 4em 0;/*Mettre un espace entre le bar inferieur du menu et les autres elements*/
+}
+
+.inline-block{ 
+display: inline-block; /* Mettre sur la meme ligne les boutons*/
+						/* Cette classe est utlisé dans le formulaire de la page show*/
+}
+
+.help-block{
+/* la classe qui gère la couleur des messages*/
+color:red;
+font-style:italic;
+font-weight: normal;
+}
+
+.btn-primary {
+    margin-right: 10px;
+}
+
+h1 {
+ border:1px dotted black;
+ font-weight: normal;
+ font-size:1.3em;
+ }
+/*Replaced .has-error, .has-warning, and .has-success classes with HTML5 form validation via CSS’s 
+:invalid and :valid pseudo-classes.*/
+input:invalid {
+ border-color: #c00000;
+}
+
+ textarea:invalid {
+ border-color: #c00000;
+}
+/*form:invalid {
+  border: 5px solid #ffdddd; classe en remplacement de 
+}*/
+
+
+/* xx-small: minuscule ;
+
+x-small: très petit ;
+
+small: petit ;
+
+medium: moyen ;
+
+large: grand ;
+
+x-large: très grand ;
+
+xx-large: euh… gigantesque.*/
