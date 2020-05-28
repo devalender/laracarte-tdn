@@ -91,6 +91,6 @@ Route::get('/monemail',function(){
 
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);/*activer la verification de Emails*/
 
 Route::get('/home', 'HomeController@index')->name('home');

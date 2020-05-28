@@ -44,13 +44,40 @@
 
 <div class="collapse navbar-collapse" id="navbarsExampleDefault2">
       <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
+         <!-- Authentication si le user est un visiteur affiche login et Register-->
+      @guest
+      <li class="nav-item {{ set_active_route('contact') }} ">
+        <a class="nav-link" href="{{route('login') }}">Login</a>
       </li>
 
+       <li class="nav-item {{ set_active_route('contact') }}">
+        <a class="nav-link" href="{{route('register') }}">Register</a>
+      </li>
+
+      @else
+     <!-- Authentication sinon  le user est connecter et on affiche son nom et le bouton deconnexion-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ Auth::user()->name }} <span class="caret"></span>
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+          document.getElementById('logout-form').submit();">
+          {{ __('Logout') }}
+          </a>
+     <!-- pour la deconnection il une requete de type POST, si on met un lien on fait une reque te type Get-->
+     <!-- d'ou le systeme du formulaire et du code javascript-->
+     <!--le formulaire est soumis dinamiquement via du jeva script avec une requete de type POST-->
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+         @csrf
+         </form>
+
+      </div>
+    </li>
+
+      @endguest
       </ul>
 
     </div>
