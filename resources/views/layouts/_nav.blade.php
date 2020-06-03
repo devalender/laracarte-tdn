@@ -46,11 +46,11 @@
       <ul class="navbar-nav ml-auto">
          <!-- Authentication si le user est un visiteur affiche login et Register-->
       @guest
-      <li class="nav-item {{ set_active_route('contact') }} ">
+      <li class="nav-item {{ set_active_route('login') }} ">
         <a class="nav-link" href="{{route('login') }}">Login</a>
       </li>
 
-       <li class="nav-item {{ set_active_route('contact') }}">
+       <li class="nav-item {{ set_active_route('register') }}">
         <a class="nav-link" href="{{route('register') }}">Register</a>
       </li>
 

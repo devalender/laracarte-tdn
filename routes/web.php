@@ -43,6 +43,8 @@ Route::name('test5')->get('/mesevenements', 'EvenementsController@show');*/
 	]);
 */
 
+
+
 Route::view('/acceuil','pages.acceuil')->name('acceuil');
 /*on peux donc supprimer le controler pagecontroller
 /******************************************************************************/
@@ -89,8 +91,12 @@ Route::get('/monemail',function(){
 		'Soyez les Bienvenues' );
 });
 
+/*activer la verification de Emails*/
 
+Route::get('/', 'HomeController@index')->name('acceuil');
 
-Auth::routes(['verify' => true]);/*activer la verification de Emails*/
-
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes([
+  'register' => true,
+  'verify' => true,
+  'reset' => false
+]);

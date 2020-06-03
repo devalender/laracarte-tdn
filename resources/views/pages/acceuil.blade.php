@@ -1,4 +1,4 @@
-@extends('layouts/master',['title' => 'Home'])
+@extends('layouts/master',['title' => 'Acceuil'])
 @section('moncontenu')
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

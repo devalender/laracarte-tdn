@@ -40,7 +40,7 @@ class ContactController extends Controller
 
           $mailable = new MailMessage($message); /*Creation du mailable*/
 
-         /* $when = now()->addMinutes(0);*/
+          /*$when = now()->addMinutes(0);*/
 
  	/*$mailable = new  MailMessage(
       		$request -> name,
@@ -58,12 +58,9 @@ class ContactController extends Controller
 
 /* mettre dans une file d'attente et envoyer dans 1 mn si implements ShouldQueue est activé dans la mailable */
 
-       Mail::to(config('app.cheminmail'))
+             Mail::to(config('app.cheminmail'))
             ->send($mailable);
             /*->later($when, $mailable);*/
-
-           /*  */
-
 
       Flashy()->success('Nous vous repondrons dans les plus brefs délais !');
 
